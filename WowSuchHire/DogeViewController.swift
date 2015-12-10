@@ -42,6 +42,7 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
             if let response = response {
                 self.messages = response
                 self.tableView.reloadData()
+                self.scrollToLastCell()
             } else {
                 print("PFQuery responded with nil")
             }
@@ -96,9 +97,15 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print("Message saved with content: \(content)")
                 self.messages.append(message)
                 self.tableView.reloadData()
+                self.scrollToLastCell()
             }
             inputField.text = ""
         }
+    }
+    
+    func scrollToLastCell() {
+        let indexPath = NSIndexPath(forRow: messages.count-1, inSection: 0)
+        self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated: true)
     }
 }
 
