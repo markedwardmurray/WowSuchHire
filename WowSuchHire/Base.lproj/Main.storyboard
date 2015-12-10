@@ -40,6 +40,9 @@
                                         <state key="normal" title="Save">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="saveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Txt-sn-fuq"/>
                                         </connections>
