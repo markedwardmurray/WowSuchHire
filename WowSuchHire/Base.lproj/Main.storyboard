@@ -101,6 +101,7 @@
                     </view>
                     <connections>
                         <outlet property="inputField" destination="M1g-Dc-dCk" id="YUi-QC-WOZ"/>
+                        <outlet property="tableView" destination="fSB-dA-rbQ" id="dzy-Az-KyO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

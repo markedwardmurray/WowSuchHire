@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Parse
 
 class DogeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var inputField: UITextField!
 
     override func viewDidLoad() {
@@ -33,7 +35,15 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func saveTapped(sender: AnyObject) {
+        if let content = inputField.text {
+            let message = PFObject(className: "message")
+            message["content"] = content
+            message.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+                print("Message has been saved.")
+            }
+            inputField.text = ""
+            tableView.reloadData()
+        }
     }
-    
 }
 
