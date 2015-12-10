@@ -16,6 +16,8 @@
 		4DC2935F1C19D6C0008D69C0 /* WowSuchHireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2935E1C19D6C0008D69C0 /* WowSuchHireTests.swift */; };
 		4DC2936A1C19D6C0008D69C0 /* WowSuchHireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293691C19D6C0008D69C0 /* WowSuchHireUITests.swift */; };
 		4DC293781C19D8AA008D69C0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293771C19D8AA008D69C0 /* Secrets.swift */; };
+		5A61A7DBE00146C4BD13F533 /* Pods_WowSuchHireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C201C51336181FE3A0E1165A /* Pods_WowSuchHireTests.framework */; };
+		A87B7E66BD875139E87DE5B3 /* Pods_WowSuchHireUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A7A68E85A7D4084104ADFC /* Pods_WowSuchHireUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,13 @@
 		4DC293691C19D6C0008D69C0 /* WowSuchHireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowSuchHireUITests.swift; sourceTree = "<group>"; };
 		4DC2936B1C19D6C0008D69C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC293771C19D8AA008D69C0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		84A7A68E85A7D4084104ADFC /* Pods_WowSuchHireUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowSuchHireUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A04D85644077C777E58CE29B /* Pods-WowSuchHireUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHireUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHireUITests/Pods-WowSuchHireUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1CB079FA43527FB1E136817 /* Pods-WowSuchHireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHireTests/Pods-WowSuchHireTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C201C51336181FE3A0E1165A /* Pods_WowSuchHireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowSuchHireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD9755FE9F0EF81AC0FB00D /* Pods-WowSuchHireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHireTests/Pods-WowSuchHireTests.release.xcconfig"; sourceTree = "<group>"; };
 		D562F07881B12FCEB8CC9DE7 /* Pods-WowSuchHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire.debug.xcconfig"; sourceTree = "<group>"; };
+		EF9DFD551738B03ADE94ADCA /* Pods-WowSuchHireUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHireUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHireUITests/Pods-WowSuchHireUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A61A7DBE00146C4BD13F533 /* Pods_WowSuchHireTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87B7E66BD875139E87DE5B3 /* Pods_WowSuchHireUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */,
+				C201C51336181FE3A0E1165A /* Pods_WowSuchHireTests.framework */,
+				84A7A68E85A7D4084104ADFC /* Pods_WowSuchHireUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -148,6 +160,10 @@
 			children = (
 				D562F07881B12FCEB8CC9DE7 /* Pods-WowSuchHire.debug.xcconfig */,
 				0765CACBD8ED6A345D0ACE2F /* Pods-WowSuchHire.release.xcconfig */,
+				A1CB079FA43527FB1E136817 /* Pods-WowSuchHireTests.debug.xcconfig */,
+				CCD9755FE9F0EF81AC0FB00D /* Pods-WowSuchHireTests.release.xcconfig */,
+				EF9DFD551738B03ADE94ADCA /* Pods-WowSuchHireUITests.debug.xcconfig */,
+				A04D85644077C777E58CE29B /* Pods-WowSuchHireUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -179,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC293711C19D6C0008D69C0 /* Build configuration list for PBXNativeTarget "WowSuchHireTests" */;
 			buildPhases = (
+				F96AC21ED362E33483851F36 /* Check Pods Manifest.lock */,
 				4DC293561C19D6C0008D69C0 /* Sources */,
 				4DC293571C19D6C0008D69C0 /* Frameworks */,
 				4DC293581C19D6C0008D69C0 /* Resources */,
+				11C000EED10D39121A631976 /* Embed Pods Frameworks */,
+				5E5270370AB3CAC51CE86A7D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC293741C19D6C0008D69C0 /* Build configuration list for PBXNativeTarget "WowSuchHireUITests" */;
 			buildPhases = (
+				7D149BF89172AF58DB77981A /* Check Pods Manifest.lock */,
 				4DC293611C19D6C0008D69C0 /* Sources */,
 				4DC293621C19D6C0008D69C0 /* Frameworks */,
 				4DC293631C19D6C0008D69C0 /* Resources */,
+				92D028DA70DE70D3CBBA6F2D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +303,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		11C000EED10D39121A631976 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WowSuchHireTests/Pods-WowSuchHireTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		13816A146901A883B2537A2C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +331,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E5270370AB3CAC51CE86A7D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WowSuchHireTests/Pods-WowSuchHireTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		67218F06FB5540F0654F6977 /* Copy Pods Resources */ = {
@@ -312,6 +363,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7D149BF89172AF58DB77981A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92D028DA70DE70D3CBBA6F2D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WowSuchHireUITests/Pods-WowSuchHireUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CB330C3D2E2A6E72BBEB421B /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,6 +406,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F96AC21ED362E33483851F36 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -498,6 +594,7 @@
 		};
 		4DC293721C19D6C0008D69C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CB079FA43527FB1E136817 /* Pods-WowSuchHireTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WowSuchHireTests/Info.plist;
@@ -510,6 +607,7 @@
 		};
 		4DC293731C19D6C0008D69C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD9755FE9F0EF81AC0FB00D /* Pods-WowSuchHireTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = WowSuchHireTests/Info.plist;
@@ -522,6 +620,7 @@
 		};
 		4DC293751C19D6C0008D69C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9DFD551738B03ADE94ADCA /* Pods-WowSuchHireUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WowSuchHireUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -534,6 +633,7 @@
 		};
 		4DC293761C19D6C0008D69C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A04D85644077C777E58CE29B /* Pods-WowSuchHireUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = WowSuchHireUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
