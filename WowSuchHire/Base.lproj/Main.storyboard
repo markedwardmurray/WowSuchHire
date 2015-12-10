@@ -9,7 +9,7 @@
         <!--Doge View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DogeViewController" customModule="WowSuchHire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dogeVC" id="BYZ-38-t0r" customClass="DogeViewController" customModule="WowSuchHire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,6 +24,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1g-Dc-dCk">
                                         <rect key="frame" x="8" y="17" width="518" height="30"/>
                                         <animations/>
+                                        <accessibility key="accessibilityConfiguration" identifier="inputField" label="inputField"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -31,6 +32,7 @@
                                         <rect key="frame" x="548" y="10" width="44" height="44"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.28627452250000002" green="0.47843140360000003" blue="0.52941179279999995" alpha="1" colorSpace="deviceRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="saveButton" label="saveButton"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="XGa-2H-tOe"/>
                                             <constraint firstAttribute="width" constant="44" id="xJa-vH-xmZ"/>
@@ -45,6 +47,9 @@
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="footer" label="footer">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="iKY-vi-oN7" secondAttribute="trailing" constant="8" id="AJb-bF-gRE"/>
                                     <constraint firstAttribute="height" constant="64" id="JGa-6w-8sa"/>
@@ -54,10 +59,13 @@
                                     <constraint firstItem="iKY-vi-oN7" firstAttribute="centerY" secondItem="wbe-J6-e79" secondAttribute="centerY" id="xtb-et-QJ3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwk-XV-IiF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwk-XV-IiF" userLabel="Header">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="header" label="header">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="IHW-N0-OK3"/>
                                 </constraints>
@@ -95,6 +103,9 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="view" label="view">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="fSB-dA-rbQ" firstAttribute="top" secondItem="cwk-XV-IiF" secondAttribute="bottom" id="0Ge-6t-uzX"/>
                             <constraint firstItem="wbe-J6-e79" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8Nv-pE-Sy1"/>

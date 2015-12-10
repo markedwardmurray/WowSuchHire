@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		11EEC54DB60536791A376128 /* Pods_WowSuchHire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */; };
+		4D1C22041C1A149200232123 /* KIF-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEFDA31C1A023F00419439 /* KIF-Extensions.swift */; };
+		4D1C22051C1A149A00232123 /* DogeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEFD9E1C1A00E600419439 /* DogeViewControllerSpec.swift */; };
 		4DC2934A1C19D6C0008D69C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293491C19D6C0008D69C0 /* AppDelegate.swift */; };
 		4DC2934C1C19D6C0008D69C0 /* DogeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2934B1C19D6C0008D69C0 /* DogeViewController.swift */; };
 		4DC2934F1C19D6C0008D69C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC2934D1C19D6C0008D69C0 /* Main.storyboard */; };
@@ -16,8 +18,6 @@
 		4DC2935F1C19D6C0008D69C0 /* WowSuchHireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2935E1C19D6C0008D69C0 /* WowSuchHireTests.swift */; };
 		4DC2936A1C19D6C0008D69C0 /* WowSuchHireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293691C19D6C0008D69C0 /* WowSuchHireUITests.swift */; };
 		4DC293781C19D8AA008D69C0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293771C19D8AA008D69C0 /* Secrets.swift */; };
-		4DFEFD9F1C1A00E600419439 /* DogeViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEFD9E1C1A00E600419439 /* DogeViewControllerSpec.swift */; };
-		4DFEFDA41C1A023F00419439 /* KIF-Estensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEFDA31C1A023F00419439 /* KIF-Estensions.swift */; };
 		5A61A7DBE00146C4BD13F533 /* Pods_WowSuchHireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C201C51336181FE3A0E1165A /* Pods_WowSuchHireTests.framework */; };
 		A87B7E66BD875139E87DE5B3 /* Pods_WowSuchHireUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A7A68E85A7D4084104ADFC /* Pods_WowSuchHireUITests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +42,7 @@
 /* Begin PBXFileReference section */
 		0765CACBD8ED6A345D0ACE2F /* Pods-WowSuchHire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHire.release.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire.release.xcconfig"; sourceTree = "<group>"; };
 		2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowSuchHire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1C22061C1A155500232123 /* WowSuchHireTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WowSuchHireTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		4DC293461C19D6C0008D69C0 /* WowSuchHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowSuchHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC293491C19D6C0008D69C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DC2934B1C19D6C0008D69C0 /* DogeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +58,7 @@
 		4DC2936B1C19D6C0008D69C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC293771C19D8AA008D69C0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		4DFEFD9E1C1A00E600419439 /* DogeViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogeViewControllerSpec.swift; sourceTree = "<group>"; };
-		4DFEFDA21C1A01C800419439 /* WowSuchHireUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WowSuchHireUITests-Bridging-Header.h"; sourceTree = "<group>"; };
-		4DFEFDA31C1A023F00419439 /* KIF-Estensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIF-Estensions.swift"; sourceTree = "<group>"; };
+		4DFEFDA31C1A023F00419439 /* KIF-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIF-Extensions.swift"; sourceTree = "<group>"; };
 		84A7A68E85A7D4084104ADFC /* Pods_WowSuchHireUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowSuchHireUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04D85644077C777E58CE29B /* Pods-WowSuchHireUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHireUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHireUITests/Pods-WowSuchHireUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A1CB079FA43527FB1E136817 /* Pods-WowSuchHireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHireTests/Pods-WowSuchHireTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,8 +135,11 @@
 		4DC2935D1C19D6C0008D69C0 /* WowSuchHireTests */ = {
 			isa = PBXGroup;
 			children = (
+				4DFEFD9E1C1A00E600419439 /* DogeViewControllerSpec.swift */,
 				4DC2935E1C19D6C0008D69C0 /* WowSuchHireTests.swift */,
 				4DC293601C19D6C0008D69C0 /* Info.plist */,
+				4D1C22061C1A155500232123 /* WowSuchHireTests-Bridging-Header.h */,
+				4DFEFDA31C1A023F00419439 /* KIF-Extensions.swift */,
 			);
 			path = WowSuchHireTests;
 			sourceTree = "<group>";
@@ -144,10 +147,7 @@
 		4DC293681C19D6C0008D69C0 /* WowSuchHireUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4DFEFD9E1C1A00E600419439 /* DogeViewControllerSpec.swift */,
 				4DC293691C19D6C0008D69C0 /* WowSuchHireUITests.swift */,
-				4DFEFDA21C1A01C800419439 /* WowSuchHireUITests-Bridging-Header.h */,
-				4DFEFDA31C1A023F00419439 /* KIF-Estensions.swift */,
 				4DC2936B1C19D6C0008D69C0 /* Info.plist */,
 			);
 			path = WowSuchHireUITests;
@@ -448,6 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D1C22041C1A149200232123 /* KIF-Extensions.swift in Sources */,
+				4D1C22051C1A149A00232123 /* DogeViewControllerSpec.swift in Sources */,
 				4DC2935F1C19D6C0008D69C0 /* WowSuchHireTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,8 +458,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFEFD9F1C1A00E600419439 /* DogeViewControllerSpec.swift in Sources */,
-				4DFEFDA41C1A023F00419439 /* KIF-Estensions.swift in Sources */,
 				4DC2936A1C19D6C0008D69C0 /* WowSuchHireUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +611,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markedwardmurray.WowSuchHireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mark/Development/Challenges/Squad/WowSuchHire/WowSuchHireTests/WowSuchHireTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowSuchHire.app/WowSuchHire";
 			};
 			name = Debug;
@@ -624,6 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markedwardmurray.WowSuchHireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mark/Development/Challenges/Squad/WowSuchHire/WowSuchHireTests/WowSuchHireTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WowSuchHire.app/WowSuchHire";
 			};
 			name = Release;

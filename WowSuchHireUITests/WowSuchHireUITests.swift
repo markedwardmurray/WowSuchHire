@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import WowSuchHire
 
 class WowSuchHireUITests: XCTestCase {
         
