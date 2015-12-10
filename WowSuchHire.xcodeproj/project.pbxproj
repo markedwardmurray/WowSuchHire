@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11EEC54DB60536791A376128 /* Pods_WowSuchHire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */; };
 		4DC2934A1C19D6C0008D69C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293491C19D6C0008D69C0 /* AppDelegate.swift */; };
 		4DC2934C1C19D6C0008D69C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2934B1C19D6C0008D69C0 /* ViewController.swift */; };
 		4DC2934F1C19D6C0008D69C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC2934D1C19D6C0008D69C0 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0765CACBD8ED6A345D0ACE2F /* Pods-WowSuchHire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHire.release.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire.release.xcconfig"; sourceTree = "<group>"; };
+		2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowSuchHire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC293461C19D6C0008D69C0 /* WowSuchHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowSuchHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC293491C19D6C0008D69C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DC2934B1C19D6C0008D69C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		4DC293651C19D6C0008D69C0 /* WowSuchHireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowSuchHireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC293691C19D6C0008D69C0 /* WowSuchHireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowSuchHireUITests.swift; sourceTree = "<group>"; };
 		4DC2936B1C19D6C0008D69C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D562F07881B12FCEB8CC9DE7 /* Pods-WowSuchHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EEC54DB60536791A376128 /* Pods_WowSuchHire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				4DC2935D1C19D6C0008D69C0 /* WowSuchHireTests */,
 				4DC293681C19D6C0008D69C0 /* WowSuchHireUITests */,
 				4DC293471C19D6C0008D69C0 /* Products */,
+				D326A0FC6BA8B4803ED3F006 /* Pods */,
+				CC3828D22048051116AF3923 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = WowSuchHireUITests;
 			sourceTree = "<group>";
 		};
+		CC3828D22048051116AF3923 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D326A0FC6BA8B4803ED3F006 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D562F07881B12FCEB8CC9DE7 /* Pods-WowSuchHire.debug.xcconfig */,
+				0765CACBD8ED6A345D0ACE2F /* Pods-WowSuchHire.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DC2936E1C19D6C0008D69C0 /* Build configuration list for PBXNativeTarget "WowSuchHire" */;
 			buildPhases = (
+				13816A146901A883B2537A2C /* Check Pods Manifest.lock */,
 				4DC293421C19D6C0008D69C0 /* Sources */,
 				4DC293431C19D6C0008D69C0 /* Frameworks */,
 				4DC293441C19D6C0008D69C0 /* Resources */,
+				CB330C3D2E2A6E72BBEB421B /* Embed Pods Frameworks */,
+				67218F06FB5540F0654F6977 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13816A146901A883B2537A2C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67218F06FB5540F0654F6977 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB330C3D2E2A6E72BBEB421B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4DC293421C19D6C0008D69C0 /* Sources */ = {
@@ -395,6 +470,7 @@
 		};
 		4DC2936F1C19D6C0008D69C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D562F07881B12FCEB8CC9DE7 /* Pods-WowSuchHire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WowSuchHire/Info.plist;
@@ -406,6 +482,7 @@
 		};
 		4DC293701C19D6C0008D69C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0765CACBD8ED6A345D0ACE2F /* Pods-WowSuchHire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WowSuchHire/Info.plist;
@@ -482,6 +559,7 @@
 				4DC293701C19D6C0008D69C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DC293711C19D6C0008D69C0 /* Build configuration list for PBXNativeTarget "WowSuchHireTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				4DC293731C19D6C0008D69C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DC293741C19D6C0008D69C0 /* Build configuration list for PBXNativeTarget "WowSuchHireUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				4DC293761C19D6C0008D69C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
