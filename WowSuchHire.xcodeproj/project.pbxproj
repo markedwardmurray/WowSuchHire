@@ -255,6 +255,7 @@
 				TargetAttributes = {
 					4DC293451C19D6C0008D69C0 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 4YFVWFGQC2;
 					};
 					4DC293591C19D6C0008D69C0 = {
 						CreatedOnToolsVersion = 7.1;
@@ -587,6 +588,7 @@
 			baseConfigurationReference = D562F07881B12FCEB8CC9DE7 /* Pods-WowSuchHire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WowSuchHire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markedwardmurray.WowSuchHire;
@@ -599,6 +601,7 @@
 			baseConfigurationReference = 0765CACBD8ED6A345D0ACE2F /* Pods-WowSuchHire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WowSuchHire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.markedwardmurray.WowSuchHire;
