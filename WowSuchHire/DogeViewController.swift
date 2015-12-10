@@ -39,6 +39,8 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        // estimates the height of each cell's label - thanks, ios 9
+        
         let calcLabel = UILabel()
         calcLabel.numberOfLines = 0
         let message = self.messages[indexPath.row]
@@ -49,7 +51,8 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let screenSize = UIScreen.mainScreen().bounds.size
         let size = calcLabel.sizeThatFits(CGSizeMake(screenSize.width, CGFloat(FLT_MAX)))
         
-        return size.height + 20;
+        let padding: CGFloat = 10
+        return size.height + padding*2
 
     }
 
