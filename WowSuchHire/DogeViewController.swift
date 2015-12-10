@@ -25,6 +25,14 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.accessibilityIdentifier = "tableView"
         // setup for KIF tester - end ////
         
+        // doge-ify - begin //
+        self.tableView.backgroundColor = UIColor.clearColor()
+        let dogeImage = UIImage(named: "Doge-Meme-Blank-13.jpg")
+        self.tableView.backgroundView = UIImageView(image: dogeImage)
+        self.tableView.backgroundView?.alpha = 0.125
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        // doge-ify - end ////
+        
         let query = PFQuery(className:"Message")
         query.findObjectsInBackgroundWithBlock { (response, error) -> Void in
             if error != nil {
@@ -64,6 +72,9 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("dogeCell", forIndexPath: indexPath)
+        
+        // for doge-ification
+        cell.backgroundColor = UIColor.clearColor()
         
         let message = messages[indexPath.row]
         if let content = message["content"] as? String {
