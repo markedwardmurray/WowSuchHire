@@ -13,36 +13,71 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var inputField: UITextField!
+    
+    var messages = [PFObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let query = PFQuery(className:"Message")
+        query.findObjectsInBackgroundWithBlock { (response, error) -> Void in
+            if error != nil {
+                print(error)
+            }
+            
+            if let response = response {
+                self.messages = response
+                self.tableView.reloadData()
+            } else {
+                print("PFQuery responded with nil")
+            }
+        }
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return messages.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let calcLabel = UILabel()
+        calcLabel.numberOfLines = 0
+        let message = self.messages[indexPath.row]
+        if let content = message["content"] as? String {
+            calcLabel.text = content
+        }
+        
+        let screenSize = UIScreen.mainScreen().bounds.size
+        let size = calcLabel.sizeThatFits(CGSizeMake(screenSize.width, CGFloat(FLT_MAX)))
+        
+        return size.height + 20;
+
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("dogeCell", forIndexPath: indexPath)
         
+        let message = messages[indexPath.row]
+        if let content = message["content"] as? String {
+            cell.textLabel?.text = content
+        }
+        
         return cell
     }
     
     @IBAction func saveTapped(sender: AnyObject) {
+        if inputField.text?.characters.count == 0 {
+            return
+        }
+        
         if let content = inputField.text {
-            let message = PFObject(className: "message")
+            let message = PFObject(className: "Message")
             message["content"] = content
             message.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
-                print("Message has been saved.")
+                print("Message saved with content: \(content)")
+                self.messages.append(message)
+                self.tableView.reloadData()
             }
             inputField.text = ""
-            tableView.reloadData()
         }
     }
 }
