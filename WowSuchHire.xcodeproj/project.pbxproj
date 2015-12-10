@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		11EEC54DB60536791A376128 /* Pods_WowSuchHire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */; };
 		4DC2934A1C19D6C0008D69C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293491C19D6C0008D69C0 /* AppDelegate.swift */; };
-		4DC2934C1C19D6C0008D69C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2934B1C19D6C0008D69C0 /* ViewController.swift */; };
+		4DC2934C1C19D6C0008D69C0 /* DogeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2934B1C19D6C0008D69C0 /* DogeViewController.swift */; };
 		4DC2934F1C19D6C0008D69C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC2934D1C19D6C0008D69C0 /* Main.storyboard */; };
 		4DC293511C19D6C0008D69C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC293501C19D6C0008D69C0 /* Assets.xcassets */; };
 		4DC293541C19D6C0008D69C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC293521C19D6C0008D69C0 /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 		2261595397FA099446E87F99 /* Pods_WowSuchHire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WowSuchHire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC293461C19D6C0008D69C0 /* WowSuchHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WowSuchHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC293491C19D6C0008D69C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4DC2934B1C19D6C0008D69C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DC2934B1C19D6C0008D69C0 /* DogeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeViewController.swift; sourceTree = "<group>"; };
 		4DC2934E1C19D6C0008D69C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DC293501C19D6C0008D69C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DC293531C19D6C0008D69C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 			children = (
 				4DC293771C19D8AA008D69C0 /* Secrets.swift */,
 				4DC293491C19D6C0008D69C0 /* AppDelegate.swift */,
-				4DC2934B1C19D6C0008D69C0 /* ViewController.swift */,
+				4DC2934B1C19D6C0008D69C0 /* DogeViewController.swift */,
 				4DC2934D1C19D6C0008D69C0 /* Main.storyboard */,
 				4DC293501C19D6C0008D69C0 /* Assets.xcassets */,
 				4DC293521C19D6C0008D69C0 /* LaunchScreen.storyboard */,
@@ -334,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC2934C1C19D6C0008D69C0 /* ViewController.swift in Sources */,
+				4DC2934C1C19D6C0008D69C0 /* DogeViewController.swift in Sources */,
 				4DC293781C19D8AA008D69C0 /* Secrets.swift in Sources */,
 				4DC2934A1C19D6C0008D69C0 /* AppDelegate.swift in Sources */,
 			);
