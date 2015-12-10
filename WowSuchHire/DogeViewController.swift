@@ -19,6 +19,12 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // setup for KIF tester - begin //
+        self.tableView.accessibilityLabel = "tableView"
+        self.tableView.accessibilityIdentifier = "tableView"
+        // setup for KIF tester - end ////
+        
         let query = PFQuery(className:"Message")
         query.findObjectsInBackgroundWithBlock { (response, error) -> Void in
             if error != nil {
