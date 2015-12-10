@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'WowSuchHire' do
   pod 'Parse'
+  pod 'IQKeyboardManagerSwift'
 end
 
 target 'WowSuchHireTests' do
