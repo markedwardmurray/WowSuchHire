@@ -15,6 +15,7 @@
 		4DC293541C19D6C0008D69C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC293521C19D6C0008D69C0 /* LaunchScreen.storyboard */; };
 		4DC2935F1C19D6C0008D69C0 /* WowSuchHireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC2935E1C19D6C0008D69C0 /* WowSuchHireTests.swift */; };
 		4DC2936A1C19D6C0008D69C0 /* WowSuchHireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293691C19D6C0008D69C0 /* WowSuchHireUITests.swift */; };
+		4DC293781C19D8AA008D69C0 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC293771C19D8AA008D69C0 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4DC293651C19D6C0008D69C0 /* WowSuchHireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WowSuchHireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC293691C19D6C0008D69C0 /* WowSuchHireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WowSuchHireUITests.swift; sourceTree = "<group>"; };
 		4DC2936B1C19D6C0008D69C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC293771C19D8AA008D69C0 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		D562F07881B12FCEB8CC9DE7 /* Pods-WowSuchHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WowSuchHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WowSuchHire/Pods-WowSuchHire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		4DC293481C19D6C0008D69C0 /* WowSuchHire */ = {
 			isa = PBXGroup;
 			children = (
+				4DC293771C19D8AA008D69C0 /* Secrets.swift */,
 				4DC293491C19D6C0008D69C0 /* AppDelegate.swift */,
 				4DC2934B1C19D6C0008D69C0 /* ViewController.swift */,
 				4DC2934D1C19D6C0008D69C0 /* Main.storyboard */,
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC2934C1C19D6C0008D69C0 /* ViewController.swift in Sources */,
+				4DC293781C19D8AA008D69C0 /* Secrets.swift in Sources */,
 				4DC2934A1C19D6C0008D69C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
