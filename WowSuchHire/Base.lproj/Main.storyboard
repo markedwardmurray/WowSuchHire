@@ -21,15 +21,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-J6-e79" userLabel="Footer">
                                 <rect key="frame" x="0.0" y="536" width="600" height="64"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1g-Dc-dCk">
-                                        <rect key="frame" x="8" y="17" width="518" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M1g-Dc-dCk">
+                                        <rect key="frame" x="20" y="17" width="496" height="30"/>
                                         <animations/>
                                         <accessibility key="accessibilityConfiguration" identifier="inputField" label="inputField"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-vi-oN7">
-                                        <rect key="frame" x="548" y="10" width="44" height="44"/>
+                                        <rect key="frame" x="536" y="10" width="44" height="44"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.28627452250000002" green="0.47843140360000003" blue="0.52941179279999995" alpha="1" colorSpace="deviceRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="saveButton" label="saveButton"/>
@@ -54,10 +54,10 @@
                                     <bool key="isElement" value="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="iKY-vi-oN7" secondAttribute="trailing" constant="8" id="AJb-bF-gRE"/>
+                                    <constraint firstAttribute="trailing" secondItem="iKY-vi-oN7" secondAttribute="trailing" constant="20" id="AJb-bF-gRE"/>
                                     <constraint firstAttribute="height" constant="64" id="JGa-6w-8sa"/>
-                                    <constraint firstItem="iKY-vi-oN7" firstAttribute="leading" secondItem="M1g-Dc-dCk" secondAttribute="trailing" constant="22" id="lvD-8q-to6"/>
-                                    <constraint firstItem="M1g-Dc-dCk" firstAttribute="leading" secondItem="wbe-J6-e79" secondAttribute="leading" constant="8" id="mbq-8B-9CH"/>
+                                    <constraint firstItem="iKY-vi-oN7" firstAttribute="leading" secondItem="M1g-Dc-dCk" secondAttribute="trailing" constant="20" id="lvD-8q-to6"/>
+                                    <constraint firstItem="M1g-Dc-dCk" firstAttribute="leading" secondItem="wbe-J6-e79" secondAttribute="leading" constant="20" id="mbq-8B-9CH"/>
                                     <constraint firstItem="M1g-Dc-dCk" firstAttribute="centerY" secondItem="wbe-J6-e79" secondAttribute="centerY" id="url-85-ZEn"/>
                                     <constraint firstItem="iKY-vi-oN7" firstAttribute="centerY" secondItem="wbe-J6-e79" secondAttribute="centerY" id="xtb-et-QJ3"/>
                                 </constraints>
