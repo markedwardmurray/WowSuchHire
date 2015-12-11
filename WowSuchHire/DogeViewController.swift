@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class DogeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DogeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var inputField: UITextField!
@@ -19,6 +19,10 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.inputField.delegate = self
+        let dismissKeyboardTap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        self.tableView.addGestureRecognizer(dismissKeyboardTap)
         
         // setup for KIF tester - begin //
         self.tableView.accessibilityLabel = "tableView"
@@ -86,8 +90,17 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @IBAction func saveTapped(sender: AnyObject) {
+        self.textFieldShouldReturn(self.inputField)
+    }
+    
+    func scrollToLastCell() {
+        let indexPath = NSIndexPath(forRow: messages.count-1, inSection: 0)
+        self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated: true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         if inputField.text?.characters.count == 0 {
-            return
+            return false
         }
         
         if let content = inputField.text {
@@ -101,11 +114,16 @@ class DogeViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             inputField.text = ""
         }
+        textField.resignFirstResponder()
+        return true
     }
     
-    func scrollToLastCell() {
-        let indexPath = NSIndexPath(forRow: messages.count-1, inSection: 0)
-        self.tableView.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated: true)
+    func textFieldDidEndEditing(textField: UITextField) {
+        textField.resignFirstResponder()
+    }
+    
+    func dismissKeyboard() {
+        self.tableView.resignFirstResponder()
     }
 }
 

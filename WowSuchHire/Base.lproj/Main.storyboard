@@ -26,7 +26,7 @@
                                         <animations/>
                                         <accessibility key="accessibilityConfiguration" identifier="inputField" label="inputField"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="send"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKY-vi-oN7">
                                         <rect key="frame" x="536" y="10" width="44" height="44"/>
